@@ -33,8 +33,9 @@
         //$rue = true;
 
         //ARRAY
-        //$name = array(1,2,3,4,5);
-        //echo $name['0'];
+        // $name = array(1,2,3,4,5);
+        // $name['0'] = 55;
+        // echo $name['0'];
 
         //ARITHMETIC OPERATORS
         // -, +, /, *, %
@@ -57,19 +58,50 @@
         //     break;
         // }
 
-        //CALCULATOR
+        //WHILE LOOP
+            // $x = 1;
+            // while($x < 5){
+            //     echo "hi ", $x, "<br>";
+            //     $x++;
+            // }
 
+        //DO WHILE
+        // $x = 1;
+        // do{
+        //     echo "hi there!", "<br>";
+        //     $x++;
+        // } while($x < 5);
 
+        //FOR
+        // for($x = 0; $x <= 10; $x++){
+        //     echo 'the number is '. $x. '<br>';
+        // }
 
+        //FOR EACH
+        // $x = array(1,2,3,4,5,6,7,8,9,0);
+        // foreach($x as $i) {
+        //     echo "number ". $i. "<br>";
+        // }
 
+        //USER FUNCTIONS
+        function myFunc() {
+            echo 'hi';
+        }
+        myFunc();
     ?>
+
+
+
+
+
+
     <!-- <form method="get">
         <input type="text" name="name">
         <button type="submit">Submit</button>
     </form> -->
 
-    //CALC
-    <form>
+    <!-- CALCULATOR -->
+    <!-- <form>
             <input type="text" name="num1" placeholder="Enter number">
             <input type="text" name="num2" placeholder="Enter 2nd number">
             <select name="operator">
@@ -84,32 +116,32 @@
     </form>
     <p>the answer is:</p>
     <?php
-    if(isset($_GET['submit']))//isset is If we actually hit the button and GET Gets parameters from URL
-    {
-        $num1 = $_GET['num1'];
-        $num2 = $_GET['num2'];
-        $op = $_GET['operator'];
-        $result;
+    // if(isset($_GET['submit']))//isset is If we actually hit the button and GET Gets parameters from URL
+    // {
+    //     $num1 = $_GET['num1'];
+    //     $num2 = $_GET['num2'];
+    //     $op = $_GET['operator'];
+    //     $result;
 
-        switch($op)
-        {
-            case 'None':
-                echo 'enter operator';
-            break;
-            case 'Add':
-                echo $num1 + $num2;
-            break;
-            case 'subtract':
-                echo $num1 - $num2;
-            break;
-            case 'multiply':
-                echo $num1 * $num2;
-            break;
-            case 'divide':
-                echo $num1 / $num2;
-            break;
-        }
-    }
+    //     switch($op)
+    //     {
+    //         case 'None':
+    //             echo 'enter operator';
+    //         break;
+    //         case 'Add':
+    //             echo $num1 + $num2;
+    //         break;
+    //         case 'subtract':
+    //             echo $num1 - $num2;
+    //         break;
+    //         case 'multiply':
+    //             echo $num1 * $num2;
+    //         break;
+    //         case 'divide':
+    //             echo $num1 / $num2;
+    //         break;
+    //     }
+    // } 
     ?>
 </body>
 </html>
